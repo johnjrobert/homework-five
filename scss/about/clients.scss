@@ -1,0 +1,104 @@
+.client {
+  max-width: 980px;
+  //   max-height: 1000px;
+  //   align-items: center;
+  //   display: flex;
+  //   justify-content: center;
+  margin: 0 auto;
+  //   padding-top: 100px;
+  font-family: Gill;
+
+  .clientHeader {
+    padding-top: 120px;
+    // background-color: yellow;
+    font-size: 40px;
+  }
+
+  .bottomBorderTwo {
+    padding-top: 0;
+    width: 230px;
+    height: 2px;
+    background-color: black;
+  }
+
+  .miranda {
+    padding-top: 35px;
+    display: flex;
+    .mirandaPic {
+      height: 150px;
+      width: 260px;
+      //   background-color: blue;
+      background-image: url(../assests/images/about-client-01.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .mirandaQuote {
+      padding-left: 25px;
+      height: 150px;
+      width: 440px;
+
+      .byLine {
+        // background-color: blue;
+        width: 150px;
+        height: 50px;
+        margin-left: 350px;
+        font-size: 20px;
+        color: $travel-blue;
+      }
+    }
+  }
+
+  .john {
+    padding-top: 35px;
+    display: flex;
+    .johnPic {
+      height: 150px;
+      width: 260px;
+      background-color: blue;
+      background-image: url(../assests/images/about-client-02.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .johnQuote {
+      height: 150px;
+      width: 440px;
+      padding-left: 25px;
+      padding-bottom: 255px;
+
+      .byLineTwo {
+        // background-color: blue;
+        width: 150px;
+        height: 50px;
+        margin-left: 350px;
+        font-size: 20px;
+        color: $travel-blue;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .client {
+    width: 350px;
+
+    .miranda {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .mirandaQuote {
+        padding-top: 15px;
+      }
+    }
+
+    .john {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .johnQuote {
+        padding-top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url("fonts/GillSansMTPro-Book.otf");
+}
+@font-face {
+  font-family: Prox;
+  src: url(fonts/proximaNovaScOsfExtraCondensed.tff);
+}
+.header {
+  max-width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Gill;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  color: black;
+}
+.header .logo {
+  background-image: url(../assests/images/logo-black.png);
+  height: 42px;
+  width: 92px;
+}
+.header nav a {
+  text-decoration: none;
+  color: black;
+  font-family: Gill;
+  border-right: 1px solid #79addc;
+  margin-left: 40px;
+}
+
+footer {
+  max-width: 100%;
+  min-height: 100px;
+  margin: 0 auto;
+  background-color: #79addc;
+}
+footer .footer-content {
+  max-width: 1280px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+footer .footer-content .logo {
+  width: 92px;
+  height: 42px;
+  background-image: url(../assests/images/logo-white.png);
+}
+footer .footer-content .copyright {
+  font-size: 12px;
+  color: #ffffff;
+  font-family: Gill;
+}
+footer .footer-content .social {
+  width: 120px;
+  height: 100px;
+}
+
+.about {
+  max-width: 980px;
+  max-height: 1000px;
+  align-items: center;
+  font-family: Gill;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.about .aboutHeader {
+  width: 230px;
+}
+.about .aboutHeader .aheader {
+  font-size: 60px;
+}
+.about .aboutHeader .bottomBorder {
+  padding-top: 0;
+  width: 130px;
+  height: 2px;
+  background-color: black;
+}
+.about .aboutPara {
+  padding-top: 35px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .about {
+    width: 350px;
+  }
+}
+.client {
+  max-width: 980px;
+  margin: 0 auto;
+  font-family: Gill;
+}
+.client .clientHeader {
+  padding-top: 120px;
+  font-size: 40px;
+}
+.client .bottomBorderTwo {
+  padding-top: 0;
+  width: 230px;
+  height: 2px;
+  background-color: black;
+}
+.client .miranda {
+  padding-top: 35px;
+  display: flex;
+}
+.client .miranda .mirandaPic {
+  height: 150px;
+  width: 260px;
+  background-image: url(../assests/images/about-client-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.client .miranda .mirandaQuote {
+  padding-left: 25px;
+  height: 150px;
+  width: 440px;
+}
+.client .miranda .mirandaQuote .byLine {
+  width: 150px;
+  height: 50px;
+  margin-left: 350px;
+  font-size: 20px;
+  color: #79addc;
+}
+.client .john {
+  padding-top: 35px;
+  display: flex;
+}
+.client .john .johnPic {
+  height: 150px;
+  width: 260px;
+  background-color: blue;
+  background-image: url(../assests/images/about-client-02.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.client .john .johnQuote {
+  height: 150px;
+  width: 440px;
+  padding-left: 25px;
+  padding-bottom: 255px;
+}
+.client .john .johnQuote .byLineTwo {
+  width: 150px;
+  height: 50px;
+  margin-left: 350px;
+  font-size: 20px;
+  color: #79addc;
+}
+
+@media only screen and (max-width: 1160px) {
+  .client {
+    width: 350px;
+  }
+  .client .miranda {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .client .miranda .mirandaQuote {
+    padding-top: 15px;
+  }
+  .client .john {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .client .john .johnQuote {
+    padding-top: 15px;
+  }
+}
